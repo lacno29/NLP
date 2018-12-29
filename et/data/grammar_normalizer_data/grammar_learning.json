@@ -1,0 +1,38 @@
+[
+    [
+        "PRN LV ADJ PRD",
+        "3"
+    ],
+    [
+        "PRN LV VRB PRD",
+        "3"
+    ],
+    [
+        "NNP VBP VB DET NN NN PRD",
+        "9"
+    ],
+    [
+        "PRP$ NN VBZ NNP ",
+        "3"
+    ],
+    [
+        "JJ NN ",
+        "4"
+    ],
+    [
+        "PRP RB JJ ",
+        "3"
+    ],
+    [
+        "UH EXC ",
+        "8"
+    ],
+    [
+        "PRP$ NN VBZ NNP COM NNP VBZ NN EXC ",
+        "8"
+    ],
+    [
+        "VB IN PRP COM NNP VB RB EXC ",
+        "8"
+    ]
+]

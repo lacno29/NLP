@@ -1,0 +1,21 @@
+First, the POS Tagger uses an input.
+The input comes from the previous module, which is the tokenizer.
+The POS tagger uses TextBlob to extract the trained corpus of Penn Treebank.
+The corpus was trained using the AveragePerceptron algorithm.
+Average Perceptron algorithm gets the weights and features then average the result.
+For more technical detail about the algorithm, just search it on Google. Thanks xx.
+For reference, see the Penn Treebank txt file inside the folder.
+The input must be a list of sentences that are tokenized.
+After tagging, the punctuations will be tagged from the list.
+There is no need to install dependencies.
+
+
+Explanation for every file in this directory only.
+The test_debugging.py is the file that you will run.
+The preprocess.py contains the preprocessing of splitting of every words inside the input file and the removal and deletion of other unnecessary details.
+The pos_tagger.py contains the assertion of the format, tagging of parts-of-speech and punctuation.
+The others are the imported files for POS tagging.
+
+You may cite your own reference for better documentation.
+
+~ Christopher && Friends :)

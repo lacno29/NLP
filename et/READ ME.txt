@@ -1,0 +1,7 @@
+Integrated na sya kaso hanggang sa SentTokenizer lang.
+Pero temporary lang yung tokenizer kasi, alternative lang sya, wala pa yung kay Jeremy.
+
+Pero nasa __init__.py yung flow ng data, run mo na lang sya para makita mo output, nasa data/temp mo makikita yung mga file outputs.
+
+Regarding pala sa translator, wala pa sya kasi naputol sa tokenizer, pakituloy na lang dun sa may hawak ng pos_tagger.
+Thank you!!!

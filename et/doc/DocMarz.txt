@@ -1,0 +1,50 @@
+Module 1:SentenceSplitter
+	str(text)->list(sentences)
+	
+	Input:"""Dr. Mark finish his degrees. He finished his Ph.d. in PUP and came to U.S.A after a year. 
+	You can visit his link at doc.mark.org. I like to go at 127.0.0.1. The value of pi is 3.14.
+	Sh!t I forgot to say text are complex. btw My favorite bank is Pan!c at the Disco.
+	"""
+	
+	Output:[
+		"Dr. Mark finish his degrees.",
+		"He finished his Ph.d. in PUP and came to U.S.A after a year.",
+		"You can visit his link at doc.mark.org.",
+		"I like to go at 127.0.0.1.",
+		" The value of pi is 3.14.",
+		"Sh!t I forgot to say text are complex.",
+		"btw My favorite bank is Pan!c at the Disco."
+	]
+	
+Module 2:SentenceTokenizer
+	str(sentence)->list(words)
+	
+	Input:"He finished his Ph.d. in PUP and came to U.S.A after a year."
+	
+	Output:["He","finished","his","Ph.d.", "in", "PUP", "and", "came", "to", "U.S.A", "after", "a", "year", "."]
+	
+Module 3:POSTagger
+	list(words)->dict(wordTagged)
+	
+	Input:["He","finished","his","Ph.d.", "in", "PUP", "and", "came", "to", "U.S.A", "after", "a", "year", "."]
+	
+	Output:["He":"PRN", "finished":"VB", "his":"PRN" ,"Ph.d.":"NN", "in":"LV", "PUP":"NN", "came":"VB", "to":"LV", "U.S.A":"NN", "after":"ADV", "a":"ART", "year":"ADV", ".":"PUNC"]
+	
+Module 4:Translator(w/SemanticAnalyzer as middle, huwag magreklamo sobrang bilis ng translation. Yung semantic lang medyo mahirap.)
+	dict(wordTagged)->list(translation)
+	
+	Input:["The":"ART","baseball":"ADJ","player":"NN","used":"VB$Past","a":"ART","bat":"NN",".":"PUNC"]
+	
+	Middle:["The":["Ang"],"baseball":["beysbol"],"player":["manlalaro"],"used":["gumamit"],"a":["ng"],"bat":["batuta","paniki"],".":["."]]
+	
+	Output:["Ang":"ART","beysbol":"ADJ","manlalaro":"NN","gumamit":"VB$Past","ng":"ART","batuta":"NN",".":"PUNC"]
+	
+Module 5:GrammarChecker
+	dict(translation)-> list(correctedSentences)
+	
+	Input:["Ako":"PRN","malakas":"ADJ"]
+	
+	Output: [
+		["Ako":"PRN", "ay":"LV", "malakas":"ADJ"],
+		["Malakas":"ADJ", "ako":"PRN"]
+	]
